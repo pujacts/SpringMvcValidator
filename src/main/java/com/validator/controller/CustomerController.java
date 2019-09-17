@@ -39,7 +39,7 @@ private Map<String, Customer> customers = null;
 		}
 		
 		model.addAttribute("customer", customer);
-		customers.put(customer.getEmail(), customer);
+		//customers.put(customer.getEmail(), customer);
 		return "custSaveSuccess";
 	}
 }
