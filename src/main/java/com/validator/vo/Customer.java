@@ -22,7 +22,7 @@ public class Customer {
 	@Size(min=2, max=30) 
     private String name;
      
-    @NotEmpty @Email
+    @NotEmpty @Email(message="email should be a@abc.com form")
     private String email;
      
     @NotNull @Min(18) @Max(100)
@@ -35,7 +35,7 @@ public class Customer {
     @NotNull @Past
     private Date birthday;
     
-    @Phone
+    @Phone(message="please enter a valid number")
     private String phone;
     
     public enum Gender {
