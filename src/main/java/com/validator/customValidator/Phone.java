@@ -17,7 +17,7 @@ import javax.validation.Payload;
 @Target({ElementType.METHOD,ElementType.FIELD })
 public @interface Phone {
 
-	String message() default "{Phone}";
+	String message() default "Field can not be blank";
     
     Class<?>[] groups() default {};
      
